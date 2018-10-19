@@ -74,8 +74,8 @@
                                         <li><a href="/login"><span class="text-uppercase"><?= $Lang->get('USER__LOGIN')?></span></a></li>
                                         <li><a href="/register"><span class="text-uppercase"><?= $Lang->get('USER__REGISTER')?></span></a></li>
 									<?php } else { ?>
-                                        <li><a href="#login" data-toggle="modal"><span class="text-uppercase"><?= $Lang->get('USER__LOGIN')?></span></a></li>
-                                        <li><a href="#register" data-toggle="modal"><span class="text-uppercase"><?= $Lang->get('USER__REGISTER')?></span></a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#login"><span class="text-uppercase"><?= $Lang->get('USER__LOGIN')?></span></a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#register"><span class="text-uppercase"><?= $Lang->get('USER__REGISTER')?></span></a></li>
 									<?php } ?>
                                 </ul>
 							<?php } else { ?>
