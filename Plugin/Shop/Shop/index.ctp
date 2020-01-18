@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-          <h1 class="points-banner"> <?php  if($isConnected) {  echo $money.' '.$Configuration->getMoneyName();  } ?></h1>
+          <h1 class="points-banner"> <?php  if($isConnected) {  echo $money;  } ?></h1>
       </div>
       <div class="col-md-5">
         <ul style="margin-top: 18px;text-align: right;">
