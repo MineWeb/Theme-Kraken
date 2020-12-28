@@ -23,12 +23,6 @@
                                 <h2>Parametres Généraux</h2>
 
                                 <div class="form-group">
-                                    <label><?= $Lang->get('THEME__FAVICON_URL') ?></label>
-                                    <input type="text" class="form-control" name="favicon_url"
-                                           value="<?= $config['favicon_url'] ?>">
-                                </div>
-
-                                <div class="form-group">
                                     <label>Nom de votre serveur</label>
                                     <input type="text" class="form-control" name="name_server"
                                            value="<?= $config['name_server'] ?>">
