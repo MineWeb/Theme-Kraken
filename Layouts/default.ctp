@@ -3,9 +3,15 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title><?= $title_for_layout ?> - <?= $website_name ?></title>
+
+    <title><?= $seo_config['title'] ?></title>
+    <link rel="icon" type="image/png" href="<?= $seo_config['favicon_url'] ?>"/>
+    <meta name="title" content="<?= $seo_config['title'] ?>">
+    <meta property="og:title" content="<?= $seo_config['title'] ?>">
+    <meta name="description" content="<?= $seo_config['description'] ?>">
+    <meta property="og:description" content="<?= $seo_config['description'] ?>">
+    <meta property="og:image" content="<?= $seo_config['img_url'] ?>">
 
     <!-- core CSS -->
 	<?= $this->Html->css('bootstrap.min.css') ?>
@@ -16,7 +22,6 @@
     <?= $this->Html->script('particles-js.js') ?>
 
     <!-- core CSS -->
-    <link rel="icon" type="image/png" href="<?= $theme_config['favicon_url'] ?>"/>
     <style class="cp-pen-styles">#particles-js{
             position: absolute;
             width: 100%;
