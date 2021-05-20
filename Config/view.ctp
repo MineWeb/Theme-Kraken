@@ -9,24 +9,18 @@
 <section class="content">
     <div class="row">
         <div class="col-md-12">
-            <div class="box">
-                <div class="box-header with-border">
-                    <h3 class="box-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3>
+            <div class="card">
+                <div class="card-header with-border">
+                    <h3 class="card-title"><?= $Lang->get('THEME__CUSTOMIZATION') ?></h3>
                 </div>
 
-                <div class="box-body">
+                <div class="card-body">
                     <form method="post" enctype="multipart/form-data" data-ajax="false">
                         <input name="data[_Token][key]" value="<?= $csrfToken ?>" type="hidden" />
                         
                         <div class="row">
                             <div class="col-md-6">
                                 <h2>Parametres Généraux</h2>
-
-                                <div class="form-group">
-                                    <label><?= $Lang->get('THEME__FAVICON_URL') ?></label>
-                                    <input type="text" class="form-control" name="favicon_url"
-                                           value="<?= $config['favicon_url'] ?>">
-                                </div>
 
                                 <div class="form-group">
                                     <label>Nom de votre serveur</label>
